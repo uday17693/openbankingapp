@@ -9,7 +9,7 @@ module.exports = {
     },
     devtool: 'inline-source-map',
     devServer: {
-        contentBase: './build'
+        contentBase: [path.join(__dirname, 'build'), path.join(__dirname, 'images'), path.join(__dirname, 'css')]
     },
     plugins: [
         new CleanWebpackPlugin(),

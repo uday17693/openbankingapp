@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/icon?family=Montserrat:400,600');
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+p, blockquote{
+    font-size: .9em;
+    line-height: 1.6em;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    text-align: center;
+    padding: 0.8em 1.2em;
+}
+.logo{
+    width: 130px;
+}
+.hide-mobile{
+    display: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+.menu{
+    width: 25px;
+    margin-top: 45%;
+}
+
+.bank-logo{
+    width: 70%;
+    margin: 2em auto 2em 5%;
+}
+h1{
+    position: relative;
+    z-index: 3;
+}
+.blue-container{
+    width: 100%;
+    background: #00C2FF;
+    color: #fff;
+    margin-top: 5%;
+    padding: 4em 0 2em;
+    border-top-left-radius: 10%;
+    transform: skewY(-2deg)
+}
+.blue-container:before{
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color:#00C2FF;
+    position: absolute;
+    top: -39px;
+    right: 0;
+    z-index: -2;
+}
+.blue-container:after{
+    content: "";
+    width: 80px;
+    height: 80px;
+    background-color:#fff;
+    position: absolute;
+    top: -80px;
+    border-radius: 50%;
+    right: 0;
+    z-index: -1;
+}
+.blue-container ul{
+    transform: skewY(2deg);
+}
+.blue-container ul li {
+    margin-bottom: 3em;    
+}
+.blue-container ul li p{
+    padding: 0 .5em;
+    font-weight: bold;
+}
+.blue-container img{
+    width: 14%;
+}
+.blue-container ul li:nth-child(3) img{
+    width:14%;
+}
+.cta{
+    background: #00CC80;
+    width: calc(100%-1em);
+    display: block;
+    color: #fff;
+    border-radius: 20px;
+    padding: .5em;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: 3% auto 7%;
+    position: relative;
+    z-index: 4;
+}
+.footer-container{
+    width: 100%;
+    background: #3D444A;
+    color: #fff;
+    padding: 3em 0;
+    border-top-right-radius: 40px;
+    transform: skewY(2deg)
+}
+.footer-container .container{
+    transform: skewY(-2deg);
+}
+.footer-container:before{
+    content: "";
+    width:40px;
+    height:40px;
+    background-color: #3D444A;
+    position: absolute;
+    top: -39px;
+    left: 0;
+    z-index: -2;
+}
+.footer-container:after{
+    content:"";
+    width:80px;
+    height: 80px;
+    background-color: #fff;
+    position: absolute;
+    z-index: -1;
+    top: -80px;
+    left: 0;
+    border-radius: 50%;
+}
+ul.footer-links{
+    margin: 0 auto;
+}
+ul.footer-links li{
+    display: inline-block;
+}
+ul.footer-links li a{
+    color: #9D9D9D;
+    font-size: .8em;
+}
+nav ul{
+    position: fixed;
+    width: 60%;
+    top:0;
+    right:0;
+    text-align: left;
+    background: rgb(36, 41, 44);
+    height: 100%;
+    z-index: 7;
+    padding-top: 3em; 
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    width:100%;
+    padding: 1em 2em;
+    background-color: rgb(49, 55, 59);
+}
+
+nav ul li a:hover{
+    background-color: rgb(65, 73, 78);
+}
+
+.exit-btn{
+    margin-bottom:1em;
+    margin-top: -1.3em;
+    text-align: right;
+    padding: 0 1.4em; 
+}
+
+.exit-btn img{
+    width: 15px;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 650px){
+
+    .bank-logo{
+        width:50%;
+    }
+
+    h1{
+        font-size: 1.4em;
+        margin-bottom: 0;
+    }
+
+    .blue-container img{
+        width: 20%;
+    }
+
+    .blue-container ul li:nth-child(3) img{
+        width:20%;
+        margin-top: -6px;
+    }
+
+    .blue-container ul{
+        display: flex;
+        margin-top: -1em;
+        align-items: center;        
+        justify-content: center;   
+        align-content: stretch; 
+    }
+
+    .blue-container ul li {
+        margin-bottom: 0;
+        width: 100%;
+    }
+
+    .blue-container ul li p{
+        padding: 0 0.8em;
+    }
+
+    nav ul{
+        width: 40%;
+    }
+
+}
+
+@media only screen and (min-width: 875px){
+
+    .blue-container ul{
+        margin: 0 0 4% 0;
+    }
+
+}
+
+@media only screen and (min-width: 1024px){
+
+    .cta{
+        width:50%;
+    }
+
+    .container{
+        width:80%;
+        margin: 0 auto;
+    }
+
+    .show-desktop{
+        display: block;
+        margin: 0 auto 13% auto;
+    }
+
+    .hide-desktop{
+        display: none;
+    }
+
+    nav ul{
+        position: inherit;
+        width: auto;
+        background: none;
+        height: auto;
+        display: flex;
+        padding-top: 0;
+    }
+
+    nav ul li{
+        float:left;
+    }
+
+    nav ul li a{
+        color : black;
+        background-color: inherit;
+        text-align: right;
+        padding: 1em 2em;
+    }
+
+    nav ul li a:hover{
+        background-color: inherit;
+    }
+
+    .scroll{
+        padding-top: 3em;
+        width: 30px;
+        animation: move 1s infinite alternate;
+    }
+
+    @keyframes move {
+        from{
+            transform: translateY(0px);
+        }
+        to{
+            transform: translateY(20px);
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1600px){
+    .bank-logo{
+        width:40%;
+        margin: 5em auto 4em 5%;
+    }
+
+    .container{
+        width:70%;
+    }
+
+    .blue-container{
+        padding: 7em 0 2em;        
+    }
+    
+    .blue-container ul li p{
+        font-size: 1.3em;
+    }
+
+    h2{
+        margin-top: 4em;
+    }
+
+    .blue-container img{
+        width: 15%;
+    }
+
+    .blue-container ul li:nth-child(3) img{
+        width:15%;       
+    }
+}
+.gray-container {
+    padding: 3% 10%;
+    margin-bottom: 0 0 6.4em 0;    
+    display: flex;    
+}
+.side-pannel{
+    width: 20%;
+    background:rgb(134, 221, 248);
+    padding: 3%;
+    border-radius: 1em;
+}
+.pannel-item{
+    padding: 1%;
+}
+.pannel-header{
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(170, 163, 163);
+    padding: 0.2em 0 0.2em 1em;    
+    display: block;
+    font-weight: bold;
+    color: black;
+}
+.add_friend{
+    width: 17%;
+    float:right;
+    position: relative;
+    top: -2.6em;
+    right: 1em;   
+}
+.pannel-member{
+    margin: 0.5em 0 0.2em 0.2em;
+    padding: 0.3em 0 0.3em 0.2em;
+    display: block;   
+    border-radius: 1em; 
+}
+.pannel-member:hover{
+    background:rgb(105, 187, 212);
+}
+.friend{
+    width: 12%;
+    position: relative;
+    top: -2.4em;
+    float: left;
+}
+.friend-name{
+    padding-left: 2.5em;
+}
+
+.expense-table{
+    width: 80%;
+    background: rgb(238, 230, 216);
+    background:rgb(240, 251, 255);
+    margin-left: 0.5em;
+    border-radius: 1em; 
+}
+.monthly-expense-division{
+    margin: 2em 1em 1em 1em;
+}
+.month-header{
+    display: block;
+    border-radius: 0.5em;
+    background-color: rgb(123, 219, 248);
+    padding: 0.1em 0 0.1em 0.5em;
+    font-weight: bold;
+}
+.monthly-expenses{
+    display: flex;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(218, 211, 211);
+    justify-content: space-evenly;
+}
+.monthly-expenses:last-child{
+    border-bottom-style: none;    
+}
+.expense-logo{
+    width: 20%;
+}
+.monthly-expenses div{
+    width: 25%;
+    padding: 0;
+
+}
+.monthly-expenses p{
+    font-size: 0.7em;
+    padding: 0;
+    margin: 0;
+}
+.monthly-expenses p:first-child{    
+    margin-top: 2em;
+}
+.expense-logo{
+    padding-right: 0.5em;    
+}
+
+.table_header{
+    margin: 0 7.8em 1em 8em;
+    position: relative;
+    top: 2em;    
+    padding: 1em;    
+    color: black;
+    font-weight: bolder;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+
+.notification{
+    width: 4%;
+    float: right;
+    position: relative;
+    top: -1em;    
+}
+
+.notification-count{
+    float: right;
+    position: relative;
+    right: -3.5em;
+    top: -2em;
+    background: rgb(177, 15, 15);
+    border-radius: 40%;
+    padding: 6px;
+    font-size: 10px;
+    color: rgb(243, 225, 225);
+    font-weight: bolder;
+}
+.notification-pannel{
+    position: absolute;
+    top: 24%;
+    right: 11%;    
+    background: rgb(34, 33, 33)      
+}
+.notification-item{
+    border-width: 1px;
+    padding: 0.1em 0.7em;
+    border-bottom-style: solid;
+    border-bottom-color:rgb(42, 42, 43); 
+    font-weight: bolder;  
+    color: rgb(175, 170, 170);  
+}
+
+.notification-item:last-child{
+    border-style: none;     
+}
+
+.notification-item:hover{
+    background-color: rgba(51, 51, 51, 0.918);    
+}

@@ -7,7 +7,10 @@ class AppTitle extends React.Component {
   
   render() {
     return (
-      <p>Hello this is my first react component!</p>
+      <div className="container">
+      <img src="images/logo.svg"></img>
+
+      </div>
     );
   }
 }
