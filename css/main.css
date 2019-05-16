@@ -507,5 +507,89 @@ nav ul li a:hover{
     position: relative;
     right: -10.5em;
 }
-
-
+.bankLoginContainer{
+    background: rgba(226, 226, 226, 0.377);
+    margin: 3em 20em;
+    padding: 5em 5em;
+    text-align: center;
+}
+.connect-tobank-logo{
+    width: 30%;
+    position: relative;    
+    right: -30em;
+}
+.bankLoginContainer input{
+    display: block;
+    margin: 1em auto;
+    width: 25em;
+    padding: 1em 1em;
+}
+.bankLoginContainer button{
+    padding: 1em;
+    width: 10em;
+    font-weight: bolder;
+    color: white;
+    font-size: 1em;
+    background: rgb(107, 107, 107);
+    position: relative;
+    top: 4em;
+    right: -16em;
+}
+.bankLoginContainer p{
+    font-weight: bolder;
+    font-size: 1.1em;
+    position: relative;
+    top: -1em;
+}
+.login-bank{
+    display: none;
+}
+.search-bank-image{
+    width: 03%;
+    position: absolute;
+    top: 27.5em;
+    right:31em;       
+}
+.authenticate-bank{
+    display: none;
+}
+.globe{
+    width:7%;
+    float: left;
+    position: relative;
+    top: -5px;
+}
+.access_logo{
+    width: 8%;
+    border-radius: 50%;
+    border-style: solid;
+}
+.access_container{
+    font-weight: lighter;
+    position: relative;
+    right: 5.4em;
+}
+.access_container p{
+    float: right;
+    position: relative;
+    right: 11em;
+}
+.access_container span{
+    float: right;
+    position: relative;
+    right: 6.5em;
+    top: 1.9em;
+    color: #00CC80;
+    font-weight: bold;
+}
+.authorize-button{
+    margin: 10em 0 0 27em;
+    text-decoration: none;
+    padding: 1em 3em;
+    font-weight: bolder;
+    color: white;
+    font-size: 1em;
+    background:#00CC80;
+    position: relative;
+    top: 2em;
+}

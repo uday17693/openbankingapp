@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="./images/logo.svg" alt="logo" class="logo">
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="./images/ham.svg" alt="toggle menu" class="menu">
+                </a>
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop">
+                        <img src="images/exit.svg" alt="exit menu">
+                    </li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Account</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <img src="./images/bank.svg" class="connect-tobank-logo" alt="bank description">
+    <div class="bankLoginContainer search-bank">
+        <img src="./images/search.svg" alt="search bank image" class="search-bank-image">
+        <p>Select your country and bank name to link it to your profile</p>
+        <input type="text" class="search-region" placeholder="Country">
+        <input type="text" class="search country" placeholder="Bank Name">
+        <button onclick="showBankLogin();">Next</button>
+    </div>
+    <div class="bankLoginContainer login-bank">
+        <p>Login to your bank</p>
+        <input type="text" class="search-region" placeholder="User Name">
+        <input type="text" class="search-country" placeholder="Password">
+        <button onclick="showAuthorizeBlock();">Next</button>
+    </div>
+    <div class="bankLoginContainer authenticate-bank">
+        <p>Settle up wants access to your debit card transactions.</p>
+        <div class="access_container">
+            <img src="./images/access_logo.svg" alt="Access Logo" class="access_logo">
+            <p>Account transactions</p>
+            <span>Full access</span>            
+        </div>
+        <a class="authorize-button" href="#">Authorize</a>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <a href="#">
+                    <img src="./images/logo_white.svg" alt="logo"></a>
+                <p class="address">this is address</p>
+                <ul class="footer-links">
+                    <li>
+                        <a href="#">Terms of service</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy policy</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function showBankLogin() {
+            document.getElementsByClassName("search-bank")[0].style.display = "none";
+            document.getElementsByClassName("login-bank")[0].style.display = "block";
+        }
+        function showAuthorizeBlock(){
+            document.getElementsByClassName("login-bank")[0].style.display = "none";
+            document.getElementsByClassName("authenticate-bank")[0].style.display = "block";
+        }
+    </script>
+</body>
+
+</html>
