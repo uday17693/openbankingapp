@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
     <div class="container">
         <header>
@@ -20,23 +22,32 @@
                     <li id="exit" class="exit-btn hide-desktop">
                         <img src="images/exit.svg" alt="exit menu">
                     </li>
-                    <li><a href="#">Home</a></li>                    
+                    <li><a href="./expenses.html">Home</a></li>
                     <li><a href="./account.html">Account</a></li>
                 </ul>
             </nav>
         </header>
     </div>
-    <div class="loginContainer">
-        <div class="login-info">
-            <p>
-                Please log in if you are an existing user or
-            </p>
-            <a href="#" class="sign-up-btn">Sign up</a>
+    <div class="accoount-container">
+        <div class="profile-info">
+            <div>
+                <img src="./images/friend.svg" alt="" class="profile_image">
+            </div>
+            <div class="profile-details">
+                <label>Name</label>
+                <p>XXXXXXXXXX</p>
+                <label>Email</label>
+                <p>XXXXXXXXXX</p>
+                <label>Phone Number</label>
+                <p>XXXXXXXXXX</p>
+            </div>
         </div>
-        <div class="login-block">
-            <input type="text" class="userName" placeholder="User Name">
-            <input type="text" class="password" placeholder="Password">
-            <a href="./expenses.html"><button class="login-button" onclick="">Login</button></a>
+        <div class="connected-banks">
+            <h2>Added Banks</h2>
+            <div class="bank-connect">
+                <img src="./images/added_bank.svg" alt="Added Bank" class="added-bank">
+                <p>XXXXXXXXXX</p>
+            </div>
         </div>
     </div>
     <footer>
@@ -55,6 +66,7 @@
                 </ul>
             </div>
         </div>
-    </footer>    
+    </footer>
 </body>
+
 </html>

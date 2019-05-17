@@ -593,3 +593,37 @@ nav ul li a:hover{
     position: relative;
     top: 2em;
 }
+.accoount-container{
+    margin: 5em 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.profile-info{
+    display: flex;        
+}
+.profile-details label{
+    font-weight: bolder;
+}
+.profile_image{
+    width: 15em;
+    position: relative;
+    top: -1.2em;
+}
+.added-bank{
+    width: 5%;
+}
+.connected-banks{
+    position: relative;
+    left: 2em;
+}
+.connected-banks h2{
+    padding-bottom: 1em;
+    border-bottom-style: solid;
+    border-bottom-color: #3D444A;
+}
+.bank-connect p{
+    float: right;
+    position: relative;
+    left: -60em;
+}
