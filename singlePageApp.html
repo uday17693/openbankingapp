@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Settle Up</title>
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="./images/logo.svg" alt="logo" class="logo">
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="./images/ham.svg" alt="toggle menu" class="menu">
+                </a>
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop">
+                        <img src="images/exit.svg" alt="exit menu">
+                    </li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Account</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div id="welcome-block">
+        <section class="container">
+            <img src="./images/bank.svg" class="bank-logo" alt="bank description">
+            <h1>Update your transactions live by connecting to your bank.</h1>
+            <img src="./images/scroll.svg" alt="scroll down" class="scroll">
+        </section>
+        <div class="blue-container">
+            <div class="container">
+                <ul>
+                    <li>
+                        <img src="./images/debit_card.svg" alt="debit card">
+                        <p>Debit Card</p>
+                    </li>
+                    <li>
+                        <img src="./images/debit_card.svg" alt="debit card">
+                        <p>Credit Card</p>
+                    </li>
+                    <li>
+                        <img src="./images/debit_card.svg" alt="debit card">
+                        <p>Accounts</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <h2>Start your free trail now!</h2>
+            <a href="#" onclick="showLoginBlock();" class="cta">Get Started</a>
+        </div>
+    </div>
+    <img src="./images/loader.gif" class="loader" id="loaderLogo" alt="">
+    <div class="loginContainer">
+        <div class="login-info">
+            <p>
+                Please log in if you are an existing user or
+            </p>
+            <a href="#" class="sign-up-btn">Sign up</a>
+        </div>
+        <div class="login-block">
+            <input type="text" class="userName" placeholder="User Name">
+            <input type="password" class="password" placeholder="Password">
+            <button class="login-button" onclick="showExpenseBlock();">Login</button>
+        </div>
+    </div>
+    <div id="expenses_block">
+        <div class="table_header">
+            Expenses
+            <a href="#">
+                <img src="./images/notifications.svg" alt="Notifications" class="notification">
+                <span class="notification-count">1</span></a>
+        </div>
+        <div class="notification-pannel">
+            <div class="notification-item">
+                <p>Amount 10$ spent in proxy.</p>
+                <p>15 May</p>
+            </div>
+            <div class="notification-item">
+                <p>Amount 20$ spent in Royal.</p>
+                <p>16 May</p>
+            </div>
+        </div>
+        <div class="gray-container">
+            <div class="side-pannel">
+                <div class="pannel-item">
+                    <div class="pannel-header">
+                        <p>Groups</p>
+                        <img src="./images/groups.svg" class="add_friend" alt="">
+                    </div>
+                    <div class="pannel-member">
+                        <p class="friend-name">Apartment</p>
+                        <img class="friend" src="./images/group_image.svg" alt="add a friend">
+                    </div>
+                    <div class="pannel-member">
+                        <p class="friend-name">Italy Trip</p>
+                        <img class="friend" src="./images/group_image.svg" alt="add a friend">
+                    </div>
+                    <div class="pannel-member">
+                        <p class="friend-name">Office Group</p>
+                        <img class="friend" src="./images/group_image.svg" alt="add a friend">
+                    </div>
+                </div>
+                <div class="pannel-item">
+                    <div class="pannel-header">
+                        <p>Friends</p>
+                        <img class="add_friend" src="./images/add_friend.svg" alt="add a friend">
+                    </div>
+                    <div class="pannel-member">
+                        <p class="friend-name">Gowtham</p>
+                        <img class="friend" src="./images/friend.svg" alt="add a friend">
+                    </div>
+                    <div class="pannel-member">
+                        <p class="friend-name">Priyadarshini</p>
+                        <img class="friend" src="./images/friend.svg" alt="add a friend">
+                    </div>
+                    <div class="pannel-member">
+                        <p class="friend-name">Vikram</p>
+                        <img class="friend" src="./images/friend.svg" alt="add a friend">
+                    </div>
+                </div>
+            </div>
+            <div class="expense-table">
+                <div class="monthly-expense-division">
+                    <div class="month-header">
+                        <p>May 2019</p>
+                    </div>
+                    <div class="monthly-expenses">
+                        <div class="date-expense">
+                            <figure>
+                                <img src="images/date_icon.svg" class="expense-logo" alt="User testimonial picture">
+                                <figcaption>May 14</figcaption>
+                            </figure>
+                        </div>
+                        <div class="item-expense">
+                            <figure>
+                                <img src="images/cart_icon.svg" class="expense-logo" alt="User testimonial picture">
+                                <figcaption>Groceries</figcaption>
+                            </figure>
+                        </div>
+                        <div class="expense-paid">
+                            <p>Gowtham Paid</p>
+                            <p>$ 40</p>
+                        </div>
+                        <div class="expense-share">
+                            <p>Gowtham lent you</p>
+                            <p>$ 20</p>
+                        </div>
+                    </div>
+                    <div class="monthly-expenses">
+                        <div class="date-expense">
+                            <figure>
+                                <img src="images/date_icon.svg" class="expense-logo" alt="User testimonial picture">
+                                <figcaption>May 14</figcaption>
+                            </figure>
+                        </div>
+                        <div class="item-expense">
+                            <figure>
+                                <img src="images/cart_icon.svg" class="expense-logo" alt="User testimonial picture">
+                                <figcaption>Groceries</figcaption>
+                            </figure>
+                        </div>
+                        <div class="expense-paid">
+                            <p>Gowtham Paid</p>
+                            <p>$ 40</p>
+                        </div>
+                        <div class="expense-share">
+                            <p>Gowtham lent you</p>
+                            <p>$ 20</p>
+                        </div>
+                    </div>
+                    <div class="monthly-expenses">
+                        <div class="date-expense">
+                            <figure>
+                                <img src="images/date_icon.svg" class="expense-logo" alt="User testimonial picture">
+                                <figcaption>May 14</figcaption>
+                            </figure>
+                        </div>
+                        <div class="item-expense">
+                            <figure>
+                                <img src="images/cart_icon.svg" class="expense-logo" alt="User testimonial picture">
+                                <figcaption>Groceries</figcaption>
+                            </figure>
+                        </div>
+                        <div class="expense-paid">
+                            <p>Gowtham Paid</p>
+                            <p>$ 40</p>
+                        </div>
+                        <div class="expense-share">
+                            <p>Gowtham lent you</p>
+                            <p>$ 20</p>
+                        </div>
+                    </div>
+                    <div class="monthly-expenses">
+                        <div class="date-expense">
+                            <figure>
+                                <img src="images/date_icon.svg" class="expense-logo" alt="User testimonial picture">
+                                <figcaption>May 14</figcaption>
+                            </figure>
+                        </div>
+                        <div class="item-expense">
+                            <figure>
+                                <img src="images/cart_icon.svg" class="expense-logo" alt="User testimonial picture">
+                                <figcaption>Groceries</figcaption>
+                            </figure>
+                        </div>
+                        <div class="expense-paid">
+                            <p>Gowtham Paid</p>
+                            <p>$ 40</p>
+                        </div>
+                        <div class="expense-share">
+                            <p>Gowtham lent you</p>
+                            <p>$ 20</p>
+                        </div>
+                    </div>
+                    <div class="monthly-expenses">
+                        <div class="date-expense">
+                            <figure>
+                                <img src="images/date_icon.svg" class="expense-logo" alt="User testimonial picture">
+                                <figcaption>May 14</figcaption>
+                            </figure>
+                        </div>
+                        <div class="item-expense">
+                            <figure>
+                                <img src="images/cart_icon.svg" class="expense-logo" alt="User testimonial picture">
+                                <figcaption>Groceries</figcaption>
+                            </figure>
+                        </div>
+                        <div class="expense-paid">
+                            <p>Gowtham Paid</p>
+                            <p>$ 40</p>
+                        </div>
+                        <div class="expense-share">
+                            <p>Gowtham lent you</p>
+                            <p>$ 20</p>
+                        </div>
+                    </div>
+                    <div class="monthly-expenses">
+                        <div class="date-expense">
+                            <figure>
+                                <img src="images/date_icon.svg" class="expense-logo" alt="User testimonial picture">
+                                <figcaption>May 14</figcaption>
+                            </figure>
+                        </div>
+                        <div class="item-expense">
+                            <figure>
+                                <img src="images/cart_icon.svg" class="expense-logo" alt="User testimonial picture">
+                                <figcaption>Groceries</figcaption>
+                            </figure>
+                        </div>
+                        <div class="expense-paid">
+                            <p>Gowtham Paid</p>
+                            <p>$ 40</p>
+                        </div>
+                        <div class="expense-share">
+                            <p>Gowtham lent you</p>
+                            <p>$ 20</p>
+                        </div>
+                    </div>
+                    <div class="monthly-expenses">
+                        <div class="date-expense">
+                            <figure>
+                                <img src="images/date_icon.svg" class="expense-logo" alt="User testimonial picture">
+                                <figcaption>May 14</figcaption>
+                            </figure>
+                        </div>
+                        <div class="item-expense">
+                            <figure>
+                                <img src="images/cart_icon.svg" class="expense-logo" alt="User testimonial picture">
+                                <figcaption>Groceries</figcaption>
+                            </figure>
+                        </div>
+                        <div class="expense-paid">
+                            <p>Gowtham Paid</p>
+                            <p>$ 40</p>
+                        </div>
+                        <div class="expense-share">
+                            <p>Gowtham lent you</p>
+                            <p>$ 20</p>
+                        </div>
+                    </div>
+                    <div class="monthly-expenses">
+                        <div class="date-expense">
+                            <figure>
+                                <img src="images/date_icon.svg" class="expense-logo" alt="User testimonial picture">
+                                <figcaption>May 14</figcaption>
+                            </figure>
+                        </div>
+                        <div class="item-expense">
+                            <figure>
+                                <img src="images/cart_icon.svg" class="expense-logo" alt="User testimonial picture">
+                                <figcaption>Groceries</figcaption>
+                            </figure>
+                        </div>
+                        <div class="expense-paid">
+                            <p>Gowtham Paid</p>
+                            <p>$ 40</p>
+                        </div>
+                        <div class="expense-share">
+                            <p>Gowtham lent you</p>
+                            <p>$ 20</p>
+                        </div>
+                    </div>
+                    <div class="monthly-expenses">
+                        <div class="date-expense">
+                            <figure>
+                                <img src="images/date_icon.svg" class="expense-logo" alt="User testimonial picture">
+                                <figcaption>May 14</figcaption>
+                            </figure>
+                        </div>
+                        <div class="item-expense">
+                            <figure>
+                                <img src="images/cart_icon.svg" class="expense-logo" alt="User testimonial picture">
+                                <figcaption>Groceries</figcaption>
+                            </figure>
+                        </div>
+                        <div class="expense-paid">
+                            <p>Gowtham Paid</p>
+                            <p>$ 40</p>
+                        </div>
+                        <div class="expense-share">
+                            <p>Gowtham lent you</p>
+                            <p>$ 20</p>
+                        </div>
+                    </div>
+                    <div class="monthly-expenses">
+                        <div class="date-expense">
+                            <figure>
+                                <img src="images/date_icon.svg" class="expense-logo" alt="User testimonial picture">
+                                <figcaption>May 14</figcaption>
+                            </figure>
+                        </div>
+                        <div class="item-expense">
+                            <figure>
+                                <img src="images/cart_icon.svg" class="expense-logo" alt="User testimonial picture">
+                                <figcaption>Groceries</figcaption>
+                            </figure>
+                        </div>
+                        <div class="expense-paid">
+                            <p>Gowtham Paid</p>
+                            <p>$ 40</p>
+                        </div>
+                        <div class="expense-share">
+                            <p>Gowtham lent you</p>
+                            <p>$ 20</p>
+                        </div>
+                    </div>
+                    <div class="monthly-expenses">
+                        <div class="date-expense">
+                            <figure>
+                                <img src="images/date_icon.svg" class="expense-logo" alt="User testimonial picture">
+                                <figcaption>May 14</figcaption>
+                            </figure>
+                        </div>
+                        <div class="item-expense">
+                            <figure>
+                                <img src="images/cart_icon.svg" class="expense-logo" alt="User testimonial picture">
+                                <figcaption>Groceries</figcaption>
+                            </figure>
+                        </div>
+                        <div class="expense-paid">
+                            <p>Gowtham Paid</p>
+                            <p>$ 40</p>
+                        </div>
+                        <div class="expense-share">
+                            <p>Gowtham lent you</p>
+                            <p>$ 20</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <a href="#">
+                    <img src="./images/logo_white.svg" alt="logo"></a>
+                <p class="address">this is address</p>
+                <ul class="footer-links">
+                    <li>
+                        <a href="#">Terms of service</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy policy</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script>
+        window.onload = function () {
+            document.getElementsByClassName("loginContainer")[0].style.display = "none";
+            document.getElementById("loaderLogo").style.display = "none";
+            document.getElementById("expenses_block").style.display = "none";
+        }
+        function showLoginBlock() {
+            document.getElementById("welcome-block").style.display = "none";
+            document.getElementById("loaderLogo").style.display = "block";
+            setTimeout(function () {
+                document.getElementById("loaderLogo").style.display = "none";
+                document.getElementsByClassName("loginContainer")[0].style.display = "flex";
+            }, 3000);
+        }
+        function showExpenseBlock(){
+            document.getElementsByClassName("loginContainer")[0].style.display = "none";
+            document.getElementById("loaderLogo").style.display = "block";
+            setTimeout(function () {
+                document.getElementById("loaderLogo").style.display = "none";
+                document.getElementById("expenses_block").style.display = "block";
+            }, 3000);
+        }
+    </script>
+</body>
+
+</html>

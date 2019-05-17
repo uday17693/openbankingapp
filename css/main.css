@@ -627,3 +627,17 @@ nav ul li a:hover{
     position: relative;
     left: -60em;
 }
+.link-a-bank{
+    padding: 1em;    
+    text-decoration: none;
+    background: #00CC80;
+    width: 12%;
+    position: relative;
+    left: 2em;
+    top: 1em;
+    border-radius: 1em;
+}
+.loader{
+    position: relative;    
+    margin: 9em 0 12em 34em;
+}
